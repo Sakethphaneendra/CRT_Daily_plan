@@ -13,7 +13,7 @@
 #     print("Ohhhhh")
 # Write a prgram to accept one single marks and check if the marks are greater than 35 print Cheated equal to 35 pass less than 35 fail'
     
-mark = int(input("Enter Our Marks : \n dasds"))
+mark = int(input("Enter Our Marks : "))
 
 if(mark>35):
         print("Cheated")
