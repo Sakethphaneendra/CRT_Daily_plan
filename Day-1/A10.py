@@ -1,10 +1,7 @@
 n = int(input("Enter an Number : "))
 
-for i in range (2,n):
+for i in range (2,n/2):  
     if(n%i==0):
-        print("Not a Prime Number",end="--> ")  
+        print("Not a Prime Number")  
         break
-      
-print("Done")
-       
-
+print("Completed")
