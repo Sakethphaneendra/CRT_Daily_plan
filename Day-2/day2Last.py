@@ -1,10 +1,9 @@
 num2 = num = 1578
-sum = 0
-n=0
+n=sum = 0
 while (num2!=0):
     n+=1
     num2 = num2//10
-
+    
 while(num!=0):
     temp = num%10
     sum = sum + pow(temp,n)

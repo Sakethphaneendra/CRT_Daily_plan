@@ -2,11 +2,6 @@ import java.util.*;
 public class Numbers {
     public static void main(String args[]){
        num();
-       Scanner inn = new Scanner(System.in);
-       System.out.println("1. Continue \n2.Break");
-      
-       
-
     }
     public static void num(){
         System.out.print("Enter a Number : ");
@@ -25,6 +20,6 @@ public class Numbers {
             System.out.println("Not a Palendrome Number");
         }
 
-        
+       
     }
 }
