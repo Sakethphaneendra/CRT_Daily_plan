@@ -15,13 +15,18 @@ class Home:
                         print(i,".Product Name  :",row['ProductName'],"\n   Product Price :",row['ProductPrice'],"\n   Stock Left    :",row['ProductQuantity'],"\n   Product Price :",row['ProductPrice'],"\n   Type          :",row['ProductType'],"\n")
                         i+=1
         while(True):
-           USP = input("\n\n Enter the Product Name or ProductId here :: ")
-           self.Count = int(input(" Enter the Quantity of Product here        :: "))
-           if USP in ['1', 'Coding is Skill', 'coding is skill']:h.Billing("2999");break
-           elif USP in ['2', 'Learn Python', 'learn python']:h.Billing("999");break
-           elif USP in ['3', 'SQL Basics', 'sql basics']: h.Billing("199");break
-           elif USP in ['4', 'bug & deBug', 'bug and deBug']: h.Billing("299");break
-           else: print("Invalid Option Try Again ")
+           
+            USP = input("\n\n Enter the Product Name or ProductId here :: ")
+            while(True):
+                self.Count = int(input(" Enter the Quantity of Product here       :: "))
+                if(self.Count>300):print("Sorry, We are out Stock")
+                else:break
+           
+            if USP in ['1', 'Coding is Skill', 'coding is skill']:h.Billing("2999");break
+            elif USP in ['2', 'Learn Python', 'learn python']:h.Billing("999");break
+            elif USP in ['3', 'SQL Basics', 'sql basics']: h.Billing("199");break
+            elif USP in ['4', 'bug & deBug', 'bug and deBug']: h.Billing("299");break
+            else: print("  Invalid Option Try Again ")
               
     def Billing(self,PI):
         
